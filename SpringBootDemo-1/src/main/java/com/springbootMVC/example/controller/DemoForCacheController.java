@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.springbootMVC.example.controller;
 
 import java.util.List;
 
@@ -8,8 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.example.entity.City;
-import com.example.service.DemoForCacheService;
+
+import com.springbootMVC.example.entity.City;
+import com.springbootMVC.example.service.DemoForCacheService;
 
 @Controller
 public class DemoForCacheController {

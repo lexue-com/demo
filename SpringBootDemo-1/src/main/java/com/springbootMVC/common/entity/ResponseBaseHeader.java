@@ -1,4 +1,4 @@
-package com.common.entity;
+package com.springbootMVC.common.entity;
 
 public class ResponseBaseHeader {
 	
@@ -38,8 +38,12 @@ public class ResponseBaseHeader {
 	}
 	
 	
-	public static ResponseBaseHeader build(String returnCode, String returnMsg, String data) {
-		return new ResponseBaseHeader(returnCode,returnMsg,data);
+	public static ResponseBaseHeader buildSuccess( String data) {
+		return new ResponseBaseHeader("1111","success",data);
 	}
 	
+	
+	public static ResponseBaseHeader buildFaild( String data) {
+		return new ResponseBaseHeader("0000","fail",data);
+	}
 }

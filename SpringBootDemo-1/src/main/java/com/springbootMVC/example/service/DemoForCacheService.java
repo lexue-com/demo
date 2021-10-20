@@ -1,4 +1,4 @@
-package com.example.service;
+package com.springbootMVC.example.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.dao.DemoForCacheDao;
-import com.example.entity.City;
+import com.springbootMVC.example.dao.DemoForCacheDao;
+import com.springbootMVC.example.entity.City;
 
 @Service
 public class DemoForCacheService {

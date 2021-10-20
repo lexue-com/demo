@@ -1,4 +1,4 @@
-package com.example.dao;
+package com.springbootMVC.example.dao;
 
 
 import java.util.Collections;
@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.entity.City;
+import com.springbootMVC.example.entity.City;
 
 @Repository
 public class DemoForCacheDao {
