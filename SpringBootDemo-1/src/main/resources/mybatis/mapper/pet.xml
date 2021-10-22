@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+    <!-- namespace 对应到 接口上 就不需要实例化了 -->
+  <mapper namespace = "com.springbootMVC.mybatis.mapper.PetMapper">
+  	<resultMap type = "com.springbootMVC.mybatis.mapper.Pet" id ="petResultMap">
+  		<result column = "id" property = "id"/>
+  		<result column = "type" property = "type"/>
+  		<result column = "nick_name" property = "nickName"/>
+  		<result column = "age" property = "age"/>
+  		<result column = "color" property = "color"/>
+  	</resultMap>
+  	
+  	<select id ="getPetList" resultMap = "petResultMap">
+  		select * from pet 
+  	</select>
+  
+
+  </mapper>

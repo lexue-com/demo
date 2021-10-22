@@ -42,7 +42,7 @@ public class AccountController {
 	@PostMapping("/registerPost")
 	public String registerPost(HttpServletRequest request,Account account) {
 		
-		System.out.println("-----get------");
+		System.out.println("-----post------");
 		ResponseBaseHeader responseBaseHeader = accountService.register(account);
 		request.setAttribute("response", responseBaseHeader);
 		return "register";
