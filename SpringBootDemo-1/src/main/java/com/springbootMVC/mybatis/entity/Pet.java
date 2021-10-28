@@ -1,4 +1,4 @@
-package com.springbootMVC.mybatis.mapper;
+package com.springbootMVC.mybatis.entity;
 
 public class Pet {
 	
