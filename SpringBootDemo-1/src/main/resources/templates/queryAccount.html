@@ -12,15 +12,15 @@
 			<th>序号</th>
 			<th>登录名</th>
 			<th>密码</th>
-			<th>年龄</th>
-			<th>地址</th>
+			<th>昵称</th>
+			<th>email</th>
 		</tr>
 		<tr th:each = "account:${allAccount}">
 			<td th:text = "${account.id}"></td>
 			<td th:text = "${account.loginName}"></td>
 			<td th:text = "${account.password}"></td>
-			<td th:text = "${account.age}"></td>
-			<td th:text = "${account.location}"></td>
+			<td th:text = "${account.nickName}"></td>
+			<td th:text = "${account.email}"></td>
 		</tr>
 	</table>
 </html>
