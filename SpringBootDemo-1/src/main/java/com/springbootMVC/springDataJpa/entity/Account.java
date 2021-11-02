@@ -13,8 +13,9 @@ public class Account {
 	private Integer id;
 	private String loginName;
 	private String password;
-	private Integer age;
-	private String location;
+	private Integer nickName;
+	private String role;
+	private String email;
 	public Integer getId() {
 		return id;
 	}
@@ -33,19 +34,24 @@ public class Account {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Integer getAge() {
-		return age;
+	public Integer getNickName() {
+		return nickName;
 	}
-	public void setAge(Integer age) {
-		this.age = age;
+	public void setNickName(Integer nickName) {
+		this.nickName = nickName;
 	}
-	public String getLocation() {
-		return location;
+	public String getRole() {
+		return role;
 	}
-	public void setLocation(String location) {
-		this.location = location;
+	public void setRole(String role) {
+		this.role = role;
 	}
-	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	
 	
 	
