@@ -12,18 +12,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.springbootMVC.common.entity.ResponseBaseHeader;
-import com.springbootMVC.springDataJpa.entity.Account;
-import com.springbootMVC.springDataJpa.service.AccountService;
+import com.springbootMVC.springDataJpa.entity.Account1;
+import com.springbootMVC.springDataJpa.service.AccountDemoService;
 
 @Controller
-public class AccountController {
+public class AccountDemoController {
 	
 	@Autowired
-	AccountService accountService;
+	AccountDemoService accountService;
 	
 	@RequestMapping("/queryAccount")
 	public String queryAccount(ModelMap map){
-		List<Account> list = accountService.queryAccount();
+		List<Account1> list = accountService.queryAccount();
 		map.put("allAccount", list);
 		return "queryAccount";
 	}
@@ -31,7 +31,7 @@ public class AccountController {
 	
 	
 	@GetMapping("/registerGet")
-	public String registerGet(HttpServletRequest request,Account account) {
+	public String registerGet(HttpServletRequest request,Account1 account) {
 		
 		System.out.println("-----get------");
 		ResponseBaseHeader responseBaseHeader = accountService.register(account);
@@ -40,7 +40,7 @@ public class AccountController {
 	}
 	
 	@PostMapping("/registerPost")
-	public String registerPost(HttpServletRequest request,Account account) {
+	public String registerPost(HttpServletRequest request,Account1 account) {
 		
 		System.out.println("-----post------");
 		ResponseBaseHeader responseBaseHeader = accountService.register(account);

@@ -6,21 +6,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.springbootMVC.common.entity.ResponseBaseHeader;
-import com.springbootMVC.springDataJpa.entity.Account;
+import com.springbootMVC.springDataJpa.entity.Account1;
 import com.springbootMVC.springDataJpa.repository.AccountRepository;
 
 
 @Service
-public class AccountService {
+public class AccountDemoService {
 	
 	@Autowired
 	AccountRepository  accountRepository;
 	
-	public List<Account> queryAccount(){
+	public List<Account1> queryAccount(){
 		return accountRepository.findAll();
 	}
 	
-	public ResponseBaseHeader register(Account account) {
+	public ResponseBaseHeader register(Account1 account) {
 		
 		try {
 			accountRepository.save(account);
