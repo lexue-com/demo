@@ -23,7 +23,7 @@ public class DemoForCacheController {
 		System.out.println(ToStringBuilder.reflectionToString(city));
 		String msgString = demoForCaheService.addCity(city);
 		map.put("returnMsg", msgString);
-		return "addCity";
+		return "city/addCity";
 	}
 	
 	
@@ -32,7 +32,7 @@ public class DemoForCacheController {
 		
 		List<City> cityList = demoForCaheService.findAllCity();
 		map.put("cityList", cityList);
-		return "findAllCity";
+		return "city/findAllCity";
 	}
 
 }

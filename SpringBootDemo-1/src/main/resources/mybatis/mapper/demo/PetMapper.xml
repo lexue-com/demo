@@ -4,7 +4,7 @@
 
     <!-- namespace 对应到 接口上 就不需要实例化了 -->
   <mapper namespace = "com.springbootMVC.mybatis.mapper.PetMapper">
-  	<resultMap type = "com.springbootMVC.mybatis.mapper.Pet" id ="petResultMap">
+  	<resultMap type = "com.springbootMVC.mybatis.pojo.Pet" id ="petResultMap">
   		<result column = "id" property = "id"/>
   		<result column = "type" property = "type"/>
   		<result column = "nick_name" property = "nickName"/>

@@ -6,14 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Account1 {
+public class Account {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String loginName;
 	private String password;
-	private Integer nickName;
+	private String nickName;
 	private String role;
 	private String email;
 	public Integer getId() {
@@ -34,10 +34,11 @@ public class Account1 {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Integer getNickName() {
+
+	public String getNickName() {
 		return nickName;
 	}
-	public void setNickName(Integer nickName) {
+	public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
 	public String getRole() {

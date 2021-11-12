@@ -1,4 +1,4 @@
-package com.springbootMVC.mybatis.entity;
+package com.springbootMVC.mybatis.pojo;
 
 public class Pet {
 	

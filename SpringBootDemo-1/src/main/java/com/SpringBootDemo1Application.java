@@ -1,4 +1,4 @@
-package com.springbootMVC;
+package com;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,8 @@ import org.springframework.context.annotation.ComponentScan;
 //如果使用@SpringBootApplication注解：
 //@SpringBootApplication(scanBasePackages = "com.springbootMVC")
 @EnableAutoConfiguration
-@MapperScan(basePackages = "com.springbootMVC.oa.mapper")
+@SpringBootApplication(scanBasePackages = "com.springbootMVC")
+@MapperScan(basePackages = {"com.springbootMVC.mybatis.mapper","com.springbootMVC.oa.mapper"})
 public class SpringBootDemo1Application {
 
 	public static void main(String[] args) {

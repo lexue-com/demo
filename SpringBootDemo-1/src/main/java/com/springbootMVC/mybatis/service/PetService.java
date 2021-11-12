@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.springbootMVC.mybatis.entity.Pet;
 import com.springbootMVC.mybatis.mapper.PetMapper;
+import com.springbootMVC.mybatis.pojo.Pet;
 
 @Service
 public class PetService {
